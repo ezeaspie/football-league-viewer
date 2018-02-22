@@ -1,0 +1,130 @@
+<head>
+  <title>Football Tables</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+  <div class="table">
+    <li class="header"><%= dataPL.leagueCaption %></li>
+    <li class="info">
+      <span class="pos">POS</span>
+      <span class="name">Name</span>
+      <span class="gp">GP</span>
+      <span class="pts">PTS</span>
+      <span class="gf">GF</span>
+      <span class="ga">GA</span>
+      <span class="gd">GD</span>
+    </li>
+
+  <% dataPL.standing.forEach((team) => { %>
+  <li class="team">
+    <span class="pos"><%= team.position %></span>
+    <span class="name"><%= team.teamName %></span>
+    <span class="gp"><%= team.playedGames %></span>
+    <span class="pts"><%= team.points %></span>
+    <span class="gf"><%= team.goals %></span>
+    <span class="ga"><%= team.goalsAgainst %></span>
+    <span class="gd"><%= team.goalDifference %></span>
+  </li>
+  <% }); %>
+  </div>
+
+  <div class="table">
+    <li class="header"><%= dataLL.leagueCaption %></li>
+    <li class="info">
+      <span class="pos">POS</span>
+      <span class="name">Name</span>
+      <span class="gp">GP</span>
+      <span class="pts">PTS</span>
+      <span class="gf">GF</span>
+      <span class="ga">GA</span>
+      <span class="gd">GD</span>
+    </li>
+
+    <% dataLL.standing.forEach((team) => { %>
+    <li class="team">
+      <span class="pos"><%= team.position %></span>
+      <span class="name"><%= team.teamName %></span>
+      <span class="gp"><%= team.playedGames %></span>
+      <span class="pts"><%= team.points %></span>
+      <span class="gf"><%= team.goals %></span>
+      <span class="ga"><%= team.goalsAgainst %></span>
+      <span class="gd"><%= team.goalDifference %></span>
+    </li>
+    <% }); %>
+  </div>
+
+  <div class="table">
+    <li class="header"><%= dataSA.leagueCaption %></li>
+    <li class="info">
+      <span class="pos">POS</span>
+      <span class="name">Name</span>
+      <span class="gp">GP</span>
+      <span class="pts">PTS</span>
+      <span class="gf">GF</span>
+      <span class="ga">GA</span>
+      <span class="gd">GD</span>
+    </li>
+    <% dataSA.standing.forEach((team) => { %>
+    <li class="team">
+      <span class="pos"><%= team.position %></span>
+      <span class="name"><%= team.teamName %></span>
+      <span class="gp"><%= team.playedGames %></span>
+      <span class="pts"><%= team.points %></span>
+      <span class="gf"><%= team.goals %></span>
+      <span class="ga"><%= team.goalsAgainst %></span>
+      <span class="gd"><%= team.goalDifference %></span>
+    </li>
+    <% }); %>
+  </div>
+
+  <div class="table">
+    <li class="header"><%= dataBL.leagueCaption %></li>
+    <li class="info">
+      <span class="pos">POS</span>
+      <span class="name">Name</span>
+      <span class="gp">GP</span>
+      <span class="pts">PTS</span>
+      <span class="gf">GF</span>
+      <span class="ga">GA</span>
+      <span class="gd">GD</span>
+    </li>
+    <% dataBL.standing.forEach((team) => { %>
+    <li class="team">
+      <span class="pos"><%= team.position %></span>
+      <span class="name"><%= team.teamName %></span>
+      <span class="gp"><%= team.playedGames %></span>
+      <span class="pts"><%= team.points %></span>
+      <span class="gf"><%= team.goals %></span>
+      <span class="ga"><%= team.goalsAgainst %></span>
+      <span class="gd"><%= team.goalDifference %></span>
+    </li>
+    <% }); %>
+  </div>
+
+  <div class="table">
+    <li class="header"><%= dataL1.leagueCaption %></li>
+    <li class="info">
+      <span class="pos">POS</span>
+      <span class="name">Name</span>
+      <span class="gp">GP</span>
+      <span class="pts">PTS</span>
+      <span class="gf">GF</span>
+      <span class="ga">GA</span>
+      <span class="gd">GD</span>
+    </li>
+
+    <% dataL1.standing.forEach((team) => { %>
+    <li class="team">
+      <span class="pos"><%= team.position %></span>
+      <span class="name"><%= team.teamName %></span>
+      <span class="gp"><%= team.playedGames %></span>
+      <span class="pts"><%= team.points %></span>
+      <span class="gf"><%= team.goals %></span>
+      <span class="ga"><%= team.goalsAgainst %></span>
+      <span class="gd"><%= team.goalDifference %></span>
+    </li>
+    <% }); %>
+  </div>
+</div>
+</body>
